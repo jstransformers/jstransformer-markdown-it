@@ -1,0 +1,20 @@
+{
+  "name": "jstransformer-markdown-it",
+  "version": "0.0.1",
+  "description": "Transform markdown into HTML using markdown-it",
+  "keywords": [
+    "jstransformer"
+  ],
+  "dependencies": {
+    "markdown-it": "^3.0.6"
+  },
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jstransformers/jstransformer-markdown-it.git"
+  },
+  "author": "Rob Loach <robloach@gmail.com>",
+  "license": "MIT"
+}
