@@ -25,4 +25,9 @@ var output = transform.render(input);
 fs.writeFileSync(__dirname + '/output.html', output);
 assertEqual(output, expected);
 
-console.log('test passed');
+if (failed) {
+  console.log('tests FAILED');
+  process.exit(1);
+} else {
+  console.log('tests PASSED');
+}
