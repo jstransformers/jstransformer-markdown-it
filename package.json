@@ -1,12 +1,12 @@
 {
   "name": "jstransformer-markdown-it",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Transform markdown into HTML using markdown-it",
   "keywords": [
     "jstransformer"
   ],
   "dependencies": {
-    "markdown-it": "^3.0.6"
+    "markdown-it": "^4.0.3"
   },
   "devDependencies": {
     "coveralls": "^2.11.2",
