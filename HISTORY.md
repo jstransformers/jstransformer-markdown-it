@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.0: 2015-06-01
+
+- Update Boilerplate
+
 ## v0.0.2: 2015-03-29
 
 - Use `'html'` as output format

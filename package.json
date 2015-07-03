@@ -1,26 +1,31 @@
 {
   "name": "jstransformer-markdown-it",
   "version": "0.0.2",
-  "description": "Transform markdown into HTML using markdown-it",
+  "description": "markdown-it support for JSTransformers.",
   "keywords": [
-    "jstransformer"
+    "jstransformer",
+    "markdown-it"
+  ],
+  "files": [
+    "index.js"
   ],
   "dependencies": {
     "markdown-it": "^4.0.3"
   },
   "devDependencies": {
-    "coveralls": "^2.11.2",
-    "istanbul": "^0.3.5"
+    "test-jstransformer": "^1.0.0"
   },
   "scripts": {
-    "test": "node test",
-    "coverage": "istanbul cover test",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
+    "test": "test-jstransformer",
+    "coverage": "test-jstransformer coverage"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/jstransformers/jstransformer-markdown-it.git"
   },
-  "author": "Rob Loach <robloach@gmail.com>",
+  "author": {
+    "name": "JSTransformers Team",
+    "url": "http://github.com/orgs/jstransformers/people"
+  },
   "license": "MIT"
 }
