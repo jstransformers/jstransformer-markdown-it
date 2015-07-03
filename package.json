@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-markdown-it",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "markdown-it support for JSTransformers.",
   "keywords": [
     "jstransformer",
