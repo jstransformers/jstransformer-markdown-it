@@ -10,7 +10,7 @@
     "index.js"
   ],
   "dependencies": {
-    "markdown-it": "^4.0.3"
+    "markdown-it": "^5.0.0"
   },
   "devDependencies": {
     "test-jstransformer": "^1.0.0"
