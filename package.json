@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-markdown-it",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "markdown-it support for JSTransformers.",
   "keywords": [
     "jstransformer",
@@ -16,8 +16,11 @@
     "test-jstransformer": "^1.0.0"
   },
   "scripts": {
-    "test": "test-jstransformer",
-    "coverage": "test-jstransformer coverage"
+    "coverage": "test-jstransformer coverage",
+    "test": "test-jstransformer"
+  },
+  "engines": {
+    "node": ">=0.10.36"
   },
   "repository": {
     "type": "git",
