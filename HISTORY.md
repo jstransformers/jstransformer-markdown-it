@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.1: 2015-10-15
+
+- Added [`renderInline()`](https://github.com/markdown-it/markdown-it#simple) support
+
 ## v0.2.0: 2015-10-15
 
 - Update to `markdown-it@^5.0.0`
