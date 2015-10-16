@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.0: 2015-10-15
+
+- Update to `markdown-it@^5.0.0`
+
 ## v0.1.0: 2015-06-01
 
 - Update Boilerplate
