@@ -10,7 +10,7 @@
     "index.js"
   ],
   "dependencies": {
-    "markdown-it": "^5.0.0"
+    "markdown-it": "^6.0.0"
   },
   "devDependencies": {
     "markdown-it-mark": "^2.0.0",
