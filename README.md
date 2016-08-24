@@ -20,6 +20,25 @@ md.render('# Hello World!').body;
 //=> '<h1>Hello World!</h1>'
 ```
 
+### Inline rendering
+
+markdown-it supports rendering a Markdown string in an inline fashion (i.e. without wrapping `<p>`):
+
+```js
+var md = require('markdown-it')();
+md.renderInline(src);
+```
+
+In jstransformer-markdown-it, this can be achieved through the `inline` option:
+
+```js
+var md = require('jstransformer')(require('jstransformer-markdown-it'));
+md.render('**strong**').body;
+//=> '<p><strong>strong</strong></p>\n'
+md.render('**strong**', { inline: true }).body;
+//=> '<strong>strong</strong>'
+```
+
 ### Plugins
 
 Plugins in markdown-it are applied with the `.use` function:
