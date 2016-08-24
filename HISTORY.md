@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.0: 2016-08-23
+
+- Update to `markdown-it@^7.0.0`
+- Module declared as stable
+
 ## v0.2.2: 2015-10-15
 
 - Added plugins support
