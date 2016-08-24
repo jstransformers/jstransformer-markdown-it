@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.0.0: 2016-08-23
+
+- Update to `markdown-it@^7.0.0`
+- Module declared as stable
+- Allow specifying options for plugins
+- Added support for enabling/disabling rules
+- Added documentation on inline and plugin support
+
+## v0.2.3: 2016-04-03
+
+- Update to `markdown-it@^6.0.0`
+
 ## v0.2.2: 2015-10-15
 
 - Added plugins support
