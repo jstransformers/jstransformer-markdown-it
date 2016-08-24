@@ -10,14 +10,17 @@ exports.render = function (str, options) {
   var md = MarkdownIt(options);
 
   // Parse the plugins.
-  for (var i in options.plugins || {}) {
-    if (typeof options.plugins[i] === 'string') {
-      md.use(require(options.plugins[i]));
+  (options.plugins || []).forEach(function (plugin) {
+    if (!Array.isArray(plugin)) {
+      plugin = [plugin];
     }
-    else {
-      md.use(options.plugins[i]);
+
+    if (typeof plugin[0] === 'string') {
+      plugin[0] = require(plugin[0]);
     }
-  }
+
+    md.use.apply(md, plugin);
+  });
 
   // Render the markdown.
   if (options.inline) {
