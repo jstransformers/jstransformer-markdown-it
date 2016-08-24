@@ -22,6 +22,15 @@ exports.render = function (str, options) {
     md.use.apply(md, plugin);
   });
 
+  // Parse enable/disable rules.
+  (options.enable || []).forEach(function (rule) {
+    md.enable.apply(md, Array.isArray(rule) ? rule : [rule]);
+  });
+
+  (options.disable || []).forEach(function (rule) {
+    md.disable.apply(md, Array.isArray(rule) ? rule : [rule]);
+  });
+
   // Render the markdown.
   if (options.inline) {
     return md.renderInline(str);

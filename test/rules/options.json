@@ -1,0 +1,8 @@
+{
+  "disable": [
+    "backticks"
+  ],
+  "enable": [
+    ["nonexistent", true]
+  ]
+}

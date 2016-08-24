@@ -68,6 +68,36 @@ md.render(markdown, {
 
 If an element of the `plugins` array is a string, it is `require`d. If an element is an array, the first element will represent the plugin, while the rest are treated as options to that plugin.
 
+### Rules
+
+markdown-it allows enabling and disabling specific rules through `md.disable` and `.enable` functions:
+
+```js
+var md = require('markdown-it')();
+md.disable([ 'link', 'image' ]);
+md.disable('backticks');
+md.disable('might-not-exist', true);
+md.enable('might-not-exist2', true);
+```
+
+In jstransformer-markdown-it, the same thing can be done with the `enable` and `disable` options, with slightly modified syntax:
+
+```js
+var md = require('jstransformer')(require('jstransformer-markdown-it'));
+
+md.render(markdown, {
+  disable: [
+    'link',
+    'image',
+    'backticks',
+    ['might-not-exist', true]
+  ],
+  enable: [
+    ['might-not-exist2', true]
+  ]
+}).body;
+```
+
 ## License
 
 MIT
