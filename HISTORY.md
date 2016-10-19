@@ -1,5 +1,9 @@
 # Changelog
 
+## v2.0.0: 2016-10-19
+
+- Update to `markdown-it@^8.0.0`
+
 ## v1.0.0: 2016-08-23
 
 - Update to `markdown-it@^7.0.0`
