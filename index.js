@@ -6,8 +6,17 @@ exports.name = 'markdown-it'
 exports.outputFormat = 'html'
 exports.inputFormats = ['markdown-it', 'markdown', 'md']
 exports.render = function (str, options) {
-  options = options || {}
-  var md = markdownIt(options);
+  options = Object.assign({}, options || {})
+
+  // Copy render rules from options, and remove them from options, since
+  // they're invalid.
+  var renderRules = Object.assign({}, options.renderRules || {})
+  delete options.renderRules
+
+  var md = markdownIt(options)
+
+  // Enable render rules.
+  Object.assign(md.renderer.rules, renderRules);
 
   // Parse the plugins.
   (options.plugins || []).forEach(function (plugin) {
