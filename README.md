@@ -5,6 +5,7 @@
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-markdown-it/master.svg)](https://travis-ci.org/jstransformers/jstransformer-markdown-it)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-markdown-it/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-markdown-it)
 [![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-markdown-it/master.svg)](http://david-dm.org/jstransformers/jstransformer-markdown-it)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-markdown-it.svg)](https://greenkeeper.io/)
 [![NPM version](https://img.shields.io/npm/v/jstransformer-markdown-it.svg)](https://www.npmjs.org/package/jstransformer-markdown-it)
 
 ## Installation
@@ -83,7 +84,7 @@ md.enable('might-not-exist2', true);
 In jstransformer-markdown-it, the same thing can be done with the `enable` and `disable` options, with slightly modified syntax:
 
 ```js
-var md = require('jstransformer')(require('jstransformer-markdown-it'));
+var md = require('jstransformer')(require('jstransformer-markdown-it'))
 
 md.render(markdown, {
   disable: [
