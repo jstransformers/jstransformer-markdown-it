@@ -16,15 +16,15 @@
     "markdown-it-container": "^2.0.0",
     "markdown-it-mark": "^2.0.0",
     "test-jstransformer": "^1.0.0",
-    "xo": "^0.18.1"
+    "xo": "*"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer",
-    "posttest": "xo --space --no-semicolon index.js"
+    "posttest": "xo --space=2 --no-semicolon index.js"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=7"
   },
   "repository": {
     "type": "git",
