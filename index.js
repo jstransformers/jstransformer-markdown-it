@@ -1,10 +1,11 @@
 'use strict'
 
-var markdownIt = require('markdown-it')
+const markdownIt = require('markdown-it')
 
 exports.name = 'markdown-it'
 exports.outputFormat = 'html'
 exports.inputFormats = ['markdown-it', 'markdown', 'md']
+
 exports.render = function (str, options) {
   options = Object.assign({}, options || {})
 
@@ -19,7 +20,7 @@ exports.render = function (str, options) {
   Object.assign(md.renderer.rules, renderRules);
 
   // Parse the plugins.
-  (options.plugins || []).forEach(function (plugin) {
+  (options.plugins || []).forEach(plugin => {
     if (!Array.isArray(plugin)) {
       plugin = [plugin]
     }
@@ -33,11 +34,11 @@ exports.render = function (str, options) {
   });
 
   // Parse enable/disable rules.
-  (options.enable || []).forEach(function (rule) {
+  (options.enable || []).forEach(rule => {
     md.enable.apply(md, Array.isArray(rule) ? rule : [rule])
   });
 
-  (options.disable || []).forEach(function (rule) {
+  (options.disable || []).forEach(rule => {
     md.disable.apply(md, Array.isArray(rule) ? rule : [rule])
   })
 
