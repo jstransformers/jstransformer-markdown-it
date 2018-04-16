@@ -11,7 +11,7 @@ exports.render = function (str, options) {
 
   // Copy render rules from options, and remove them from options, since
   // they're invalid.
-  let renderRules = Object.assign({}, options.renderRules || {})
+  const renderRules = Object.assign({}, options.renderRules || {})
   delete options.renderRules
 
   const md = markdownIt(options)
