@@ -1,5 +1,10 @@
 # Changelog
 
+## v2.1.0: 2018-04-23
+
+- Allow passing render rules in options
+  - By [@nicklasmoeller](https://github.com/nicklasmoeller)
+
 ## v2.0.0: 2016-10-19
 
 - Update to `markdown-it@^8.0.0`
