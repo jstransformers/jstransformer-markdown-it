@@ -30,16 +30,16 @@ exports.render = function (str, options) {
       plugin[0] = require(plugin[0])
     }
 
-    md.use.apply(md, plugin)
+    md.use(...plugin)
   });
 
   // Parse enable/disable rules.
   (options.enable || []).forEach(rule => {
-    md.enable.apply(md, Array.isArray(rule) ? rule : [rule])
+    md.enable(...Array.isArray(rule) ? rule : [rule])
   });
 
   (options.disable || []).forEach(rule => {
-    md.disable.apply(md, Array.isArray(rule) ? rule : [rule])
+    md.disable(...Array.isArray(rule) ? rule : [rule])
   })
 
   // Render the markdown.
