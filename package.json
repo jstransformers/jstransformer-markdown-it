@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "markdown-it-container": "^2.0.0",
-    "markdown-it-mark": "^2.0.0",
+    "markdown-it-mark": "^3.0.0",
     "test-jstransformer": "^1.0.0",
     "xo": "*"
   },
