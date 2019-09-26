@@ -26,7 +26,6 @@ exports.render = function (str, options) {
     }
 
     if (typeof plugin[0] === 'string') {
-      // eslint-disable-next-line import/no-dynamic-require
       plugin[0] = require(plugin[0])
     }
 
@@ -46,5 +45,6 @@ exports.render = function (str, options) {
   if (options.inline) {
     return md.renderInline(str)
   }
+
   return md.render(str)
 }
