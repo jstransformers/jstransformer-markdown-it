@@ -4,7 +4,8 @@
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-markdown-it/master.svg)](https://travis-ci.org/jstransformers/jstransformer-markdown-it)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-markdown-it/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-markdown-it)
-[![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-markdown-it/master.svg)](http://david-dm.org/jstransformers/jstransformer-markdown-it)
+[![Dependencies Status](https://david-dm.org/jstransformers/jstransformer-markdown-it/status.svg)](https://david-dm.org/jstransformers/jstransformer-markdown-it)
+[![devDependencies Status](https://david-dm.org/jstransformers/jstransformer-markdown-it/dev-status.svg)](https://david-dm.org/jstransformers/jstransformer-markdown-it?type=dev)
 [![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-markdown-it.svg)](https://greenkeeper.io/)
 [![NPM version](https://img.shields.io/npm/v/jstransformer-markdown-it.svg)](https://www.npmjs.org/package/jstransformer-markdown-it)
 
