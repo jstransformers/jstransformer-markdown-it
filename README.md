@@ -14,25 +14,27 @@
 ## API
 
 ```js
-var md = require('jstransformer')(require('jstransformer-markdown-it'));
+const md = require('jstransformer')(require('jstransformer-markdown-it'));
 
 md.render('# Hello World!').body;
 //=> '<h1>Hello World!</h1>'
 ```
 
+What follows is a series of comparisons showing the differences between the API of markdown-it and jstransformer-markdown-it.
+
 ### Inline rendering
 
-markdown-it supports rendering a Markdown string in an inline fashion (i.e. without wrapping `<p>`):
+**markdown-it** supports rendering a Markdown string in an inline fashion (i.e. without wrapping `<p>`):
 
 ```js
-var md = require('markdown-it')();
+const md = require('markdown-it')();
 md.renderInline(src);
 ```
 
-In jstransformer-markdown-it, this can be achieved through the `inline` option:
+In **jstransformer-markdown-it**, this can be achieved through the `inline` option:
 
 ```js
-var md = require('jstransformer')(require('jstransformer-markdown-it'));
+const md = require('jstransformer')(require('jstransformer-markdown-it'));
 md.render('**strong**').body;
 //=> '<p><strong>strong</strong></p>\n'
 md.render('**strong**', { inline: true }).body;
@@ -41,20 +43,20 @@ md.render('**strong**', { inline: true }).body;
 
 ### Plugins
 
-Plugins in markdown-it are applied with the `.use` function:
+**markdown-it** applies plugins with the `.use` function:
 
 ```js
-var md = require('markdown-it')();
+const md = require('markdown-it')();
 md.use(require('plugin1'));
 md.use(plugin2);
 md.use(plugin3, opts, ...);
 md.use(require('plugin4'), opts, ...);
 ```
 
-jstransformer-markdown-it allows doing the same through the `plugins` option:
+**jstransformer-markdown-it** applies plugins through the `plugins` option:
 
 ```js
-var md = require('jstransformer')(require('jstransformer-markdown-it'));
+const md = require('jstransformer')(require('jstransformer-markdown-it'));
 
 md.render(markdown, {
   plugins: [
@@ -70,20 +72,20 @@ If an element of the `plugins` array is a string, it is `require`d. If an elemen
 
 ### Rules
 
-markdown-it allows enabling and disabling specific rules through `md.disable` and `.enable` functions:
+**markdown-it** allows enabling and disabling specific rules through `md.disable` and `.enable` functions:
 
 ```js
-var md = require('markdown-it')();
+const md = require('markdown-it')();
 md.disable([ 'link', 'image' ]);
 md.disable('backticks');
 md.disable('might-not-exist', true);
 md.enable('might-not-exist2', true);
 ```
 
-In jstransformer-markdown-it, the same thing can be done with the `enable` and `disable` options, with slightly modified syntax:
+In **jstransformer-markdown-it**, the same thing can be done with the `enable` and `disable` options, with slightly modified syntax:
 
 ```js
-var md = require('jstransformer')(require('jstransformer-markdown-it'))
+const md = require('jstransformer')(require('jstransformer-markdown-it'))
 
 md.render(markdown, {
   disable: [
