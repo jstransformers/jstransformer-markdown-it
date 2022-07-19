@@ -1,5 +1,3 @@
-'use strict'
-
 const markdownIt = require('markdown-it')
 
 exports.name = 'markdown-it'

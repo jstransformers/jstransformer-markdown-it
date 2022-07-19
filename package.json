@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-markdown-it",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "markdown-it support for JSTransformers.",
   "keywords": [
     "jstransformer",
@@ -10,17 +10,15 @@
     "index.js"
   ],
   "dependencies": {
-    "markdown-it": "^12.3.2"
+    "markdown-it": "^13.0.1"
   },
   "devDependencies": {
-    "markdown-it-container": "^2.0.0",
+    "markdown-it-container": "^3.0.0",
     "markdown-it-mark": "^3.0.0",
-    "test-jstransformer": "^1.0.0",
-    "xo": "*"
+    "test-jstransformer": "^1.0.0"
   },
   "scripts": {
-    "test": "test-jstransformer",
-    "posttest": "xo --space=2 --no-semicolon index.js"
+    "test": "test-jstransformer"
   },
   "engines": {
     "node": ">=7"
